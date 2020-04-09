@@ -2,6 +2,20 @@
 
 This repo contains AngularJS example app that demonstrate the various OpenId Connect's Implicit flow.
 
+## Setting up OIDC configuration
+1. Go to `app` folder inside `src` there you can able to see the configuration details
+    * In "login" folder locate `login.component.ts` file to updated your configuration
+    * In "auth" folder locate `auth.component.ts` file to updated your configuration
+
+### Update your configuration as below mentioned and replace the placeholders
+```
+const mIDentityOneConfig = {
+    url: "https://{partnerId}.{hostname}/auth",
+    realm: "your-midentity-one-oidc-tenant-id",
+    clientId: "your-midentity-one-oidc-app-client-id"
+}
+```
+
 ## Instructions
 1. Initially clone this repository
 2. RUN `npm install` and wait for the completion of installation on `node_modules`
