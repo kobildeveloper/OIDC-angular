@@ -21,8 +21,13 @@ const mIDentityOneConfig = {
 2. RUN `npm install` and wait for the completion of installation on `node_modules`
 3. Once `node_modules` are installed and RUN `npm run start` to start execution of `ng serve`. Because `ng serve` command builds your app and serves it locally
 4. Once the app is compiled successfully, Go to browser and open `http://localhost:4200` you will be automatically redirected to `http://localhost:4200/auth`
+5. You can configure your OIDC related information in ```src/app/login/login.component.ts``` and ```src/app/auth/auth.component.ts``` paths
+6. Make sure you replace `your-midentity-one-oidc-tenant-id` with your TenantID and `your-midentity-one-oidc-app-client-id` with your ClientID  when you created your OpenId Connect app via the mIDentity One portal.
+7. Change `{partnerid}.{hostname}` to match the sub-domain by mIDentity One portal.
 
-**Note:** Before getting started to run angular app, Please make sure the port number `4200` is empty. Because `4200` is the default port for angular app
+**Note:**
+1. Before getting started to run angular app, Please make sure the port number `4200` is empty. Because `4200` is the default port for angular app
+2. Check with mIDentity One administrator to enable Implicit Flow
 
 ## Approach to work with the implicit flow
 1. Click on "login" button
