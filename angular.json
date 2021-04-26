@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "midentityone-implicitflow": {
+    "midentitybox-implicitflow": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/midentityone-implicitflow",
+            "outputPath": "dist/midentitybox-implicitflow",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "midentityone-implicitflow:build"
+            "browserTarget": "midentitybox-implicitflow:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "midentityone-implicitflow:build:production"
+              "browserTarget": "midentitybox-implicitflow:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "midentityone-implicitflow:build"
+            "browserTarget": "midentitybox-implicitflow:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "midentityone-implicitflow:serve"
+            "devServerTarget": "midentitybox-implicitflow:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "midentityone-implicitflow:serve:production"
+              "devServerTarget": "midentitybox-implicitflow:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "midentityone-implicitflow"
+  "defaultProject": "midentitybox-implicitflow"
 }
