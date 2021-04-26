@@ -15,12 +15,12 @@ export class AuthComponent implements OnInit {
   ngOnInit(): void {
     /* Keycloak Authentication */
 
-    const mIDentityOneConfig = {
+    const mIDentityBoxConfig = {
       url: "https://{partnerId}.{hostname}/auth",
-      realm: "your-midentity-one-oidc-tenant-id",
-      clientId: "your-midentity-one-oidc-app-client-id"
+      realm: "your-midentity-box-oidc-tenant-id",
+      clientId: "your-midentity-box-oidc-app-client-id"
     }
-    let keycloak = Keycloak(mIDentityOneConfig);
+    let keycloak = Keycloak(mIDentityBoxConfig);
 
     keycloak.init({ onLoad: "login-required" }).success((auth) => {
       if (!auth) {
