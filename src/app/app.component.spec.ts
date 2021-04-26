@@ -23,13 +23,13 @@ describe('AppComponent', () => {
   it(`should have as title 'midentityone-implicitflow'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('midentityone-implicitflow');
+    expect(app.title).toEqual('midentitybox-implicitflow');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('midentityone-implicitflow app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('midentitybox-implicitflow app is running!');
   });
 });
