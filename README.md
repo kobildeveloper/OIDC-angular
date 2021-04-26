@@ -22,7 +22,7 @@ const mIDentityBoxConfig = {
 3. Once `node_modules` are installed and RUN `npm run start` to start execution of `ng serve`. Because `ng serve` command builds your app and serves it locally
 4. Once the app is compiled successfully, Go to browser and open `http://localhost:4200` you will be automatically redirected to `http://localhost:4200/auth`
 5. You can configure your OIDC related information in ```src/app/login/login.component.ts``` and ```src/app/auth/auth.component.ts``` paths
-6. Make sure you replace `your-midentity-box-oidc-tenant-id` with your TenantID and `your-midentity-box-oidc-app-client-id` with your ClientID  when you created your OpenId Connect app via the mIDentity One portal.
+6. Make sure you replace `your-midentity-box-oidc-tenant-id` with your TenantID and `your-midentity-box-oidc-app-client-id` with your ClientID  when you created your OpenId Connect app via the mIDentity Box portal.
 7. Change `{partnerid}.{hostname}` to match the sub-domain by mIDentity Box portal.
 
 **Note:**
@@ -42,20 +42,20 @@ const mIDentityBoxConfig = {
 ## What can I use these for
 OpenId Connect is a great way to add user authentication to your application where you are depending on another party to manage the user identities.
 
-In this case mIDentity One can manage the identity of your users making it faster to get up and running.
+In this case mIDentity Box can manage the identity of your users making it faster to get up and running.
 
 ## Single Sign On (SSO)
-By implementing OpenId Connect via mIDentity One you are creating a session which can be used to single sign on from your custom app into other apps that your users may have access to via the mIDentity One portal
+By implementing OpenId Connect via mIDentity Box you are creating a session which can be used to single sign on from your custom app into other apps that your users may have access to via the mIDentity Box portal
 
 ## MFA
-If MFA is enabled for a user in mIDentity One then they will be prompted to enter a token during the authentication. mIDentity One takes care of all of this for you, making strong authentication much easier to implement in your app.
+If MFA is enabled for a user in mIDentity Box then they will be prompted to enter a token during the authentication. mIDentity Box takes care of all of this for you, making strong authentication much easier to implement in your app.
 
 ## Requirements
-In order to run any of the examples you will need to create an OpenId Connect app in mIDentity One Admin portal.
+In order to run any of the examples you will need to create an OpenId Connect app in mIDentity Box Admin portal.
 
 ### Mobile App
 1. [Android app](https://play.google.com/store/apps/details?id=com.kobil.mIdentity.box)
 2. [iOS App](https://apps.apple.com/us/app/midentity-box/id1534159545)
 
 
-If you don't have a mIDentity One account [you can sign up here](https://midentitybox.com/selfenrollment).
+If you don't have a mIDentity Box account [you can sign up here](https://midentitybox.com/selfenrollment).
