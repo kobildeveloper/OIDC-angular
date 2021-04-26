@@ -16,12 +16,12 @@ export class LoginComponent implements OnInit {
   /* Keycloak Authentication */
   authenticateLogin(){
 
-    const mIDentityOneConfig = {
+    const mIDentityBoxConfig = {
       url: "https://{partnerId}.{hostname}/auth",
-      realm: "your-midentity-one-oidc-tenant-id",
-      clientId: "your-midentity-one-oidc-app-client-id"
+      realm: "your-midentity-box-oidc-tenant-id",
+      clientId: "your-midentity-box-oidc-app-client-id"
     }
-    let keycloak = Keycloak(mIDentityOneConfig);
+    let keycloak = Keycloak(mIDentityBoxConfig);
 
     keycloak.init({ onLoad: "login-required", redirectUri: window.location.origin + "/auth" }).success((auth) => {
       if (!auth) {
@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
       } else {
         console.log("Authenticated");
       }
-      sessionStorage.setItem("mIDentityOne-token", keycloak.token);
+      sessionStorage.setItem("mIDentityBox-token", keycloak.token);
     }).error((error) => {
       console.error("Authenticated failed due to \n" + error);
     });
